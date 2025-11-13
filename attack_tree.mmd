@@ -1,0 +1,50 @@
+graph TD
+    A["E-Commerce Platform Attack"] --> B["Authentication Attacks"]
+    A --> C["Data Breach Attacks"]
+    A --> D["Injection Attacks"]
+    A --> E["Session Attacks"]
+    
+    B --> B1["Credential Stuffing"]
+    B --> B2["Brute Force"]
+    B --> B3["Social Engineering"]
+    
+    C --> C1["SQL Injection"]
+    C --> C2["NoSQL Injection"]
+    C --> C3["API Exploitation"]
+    
+    D --> D1["XSS Stored"]
+    D --> D2["XSS Reflected"]
+    D --> D3["CSRF"]
+    
+    E --> E1["Session Hijacking"]
+    E --> E2["Session Fixation"]
+    E --> E3["Token Prediction"]
+    
+    B1 --> B1A["Access User Accounts"]
+    B2 --> B2A["Compromise Admin"]
+    B3 --> B3A["Steal Credentials"]
+    
+    C1 --> C1A["Extract Database"]
+    C2 --> C2A["Modify Data"]
+    C3 --> C3A["Unauthorized Access"]
+    
+    D1 --> D1A["Steal Cookies"]
+    D2 --> D2A["Redirect Users"]
+    D3 --> D3A["Phishing"]
+    
+    E1 --> E1A["Takeover Account"]
+    E2 --> E2A["Session Hijack"]
+    E3 --> E3A["Predict Tokens"]
+    
+    B1A --> F["Data Compromise"]
+    B2A --> F
+    B3A --> F
+    C1A --> F
+    C2A --> F
+    C3A --> F
+    D1A --> F
+    D2A --> F
+    D3A --> F
+    E1A --> F
+    E2A --> F
+    E3A --> F
